@@ -21,33 +21,33 @@ Annual revenue figures are estimates: the monthly charges of churned customers m
 
 **Why customers left.** Competitor offers are the largest stated reason at 33.2% of churners, followed by product, service and network issues (22.8%) and support quality (19.6%). Price and charges account for 13.0%. Reasons are self-reported, so they describe what customers said and not proven causes.
 
-![Reasons for leaving, by customers and by revenue](images/01_reasons_for_leaving.png)
+![Reasons for leaving, by customers and by revenue](01_reasons_for_leaving.png)
 
 **What the company could have influenced.** Between $923,000 and $1.48 million a year of the lost revenue came from reasons the company could have influenced. The range depends on whether competitor offers are classified as influenceable, which is a judgment call and the decision leadership has to make. Only 3.2% of churners left for life events.
 
-![Estimated annual revenue lost, by influenceable classification](images/02_influenceable_revenue.png)
+![Estimated annual revenue lost, by influenceable classification](02_influenceable_revenue.png)
 
 **When customers leave.** Of customers recorded at one month of tenure, 62.0% have churned, the highest of any month, and 55.5% of all churners left within the first year.
 
-![Churn rate by month of tenure](images/03_churn_by_tenure_month.png)
+![Churn rate by month of tenure](03_churn_by_tenure_month.png)
 
 **Who leaves.** Month-to-month customers hold 88.6% of churners and fiber customers 69.4%. Fiber customers on month-to-month contracts churn at 54.6%.
 
 **Payment method.** Electronic check customers churn at 45.3%, against 15.2% to 19.1% for the other methods. The gap holds within every contract type: on month-to-month contracts it is 53.7% against 31.6% to 34.1%.
 
-![Churn rate by contract type and payment method](images/04_payment_method_by_contract.png)
+![Churn rate by contract type and payment method](04_payment_method_by_contract.png)
 
-**Price.** Churned customers pay more on average ($74.44 against $61.27), but within each internet service they pay less, so the size of the bill does not explain churn.
+**Price.** Churned customers pay more on average ($74.44 against $61.27), but within each internet service they pay less. The overall gap comes from the larger share of churners on fiber, the most expensive service (69.4% of churners), and not from churners paying more than other customers on the same service.
 
-![Average monthly charge of churned and retained customers](images/06_monthly_charges_by_service.png)
+![Average monthly charge of churned and retained customers](06_monthly_charges_by_service.png)
 
 **Add-ons.** Tech support and online security are associated with about 7 points lower churn after accounting for contract, internet service and tenure, and streaming TV and streaming movies with about 5 points higher churn. This is an association and not proof that offering any of them would reduce churn.
 
-![Add-on association with churn, holding other factors fixed](images/07_addon_effects.png)
+![Add-on association with churn, holding other factors fixed](07_addon_effects.png)
 
 **Where the money is.** Fiber optic customers on month-to-month contracts paying by electronic check are 18.6% of customers, churn at 60.4%, and account for 42.2% of churners and 49.1% of the lost revenue. The segments overlap, so their figures should not be added together.
 
-![Estimated annual revenue lost, by customer segment](images/05_revenue_rollup.png)
+![Estimated annual revenue lost, by customer segment](05_revenue_rollup.png)
 
 The final part of the notebook turns these findings into five areas the company could test, with a success measure and a risk for each. It does not estimate how much churn a response would prevent.
 
@@ -71,7 +71,7 @@ The file is a fictional telecom provider in California with 7,043 customers and 
 | `Telco_churn.ipynb` | The full analysis: audit, cleaning, derived variables, baseline, eight questions, revenue roll-up, limits and next steps |
 | `Telco_customer_churn.xlsx` | The original IBM dataset |
 | `requirements.txt` | Library versions the notebook was run with |
-| `images/` | Charts used in this README |
+| `01_reasons_for_leaving.png` to `07_addon_effects.png` | The seven charts shown in this README |
 
 ## Run it
 
@@ -82,7 +82,7 @@ pip install -r requirements.txt
 jupyter notebook Telco_churn.ipynb
 ```
 
-Keep the Excel file in the same folder as the notebook, then run all cells. The notebook writes three CSV files (the cleaned table, the analysis table and the two model-generated columns set aside from the analysis) to the same folder. They are listed in `.gitignore` because they are rebuilt each time.
+Keep the Excel file in the same folder as the notebook, then run all cells. The notebook writes three CSV files: the cleaned table, the analysis table, and a third file holding the two model-generated columns (churn score and CLTV) that were set aside from the analysis to the same folder. They are listed in `.gitignore` because they are rebuilt each time.
 
 ## Tools
 
