@@ -58,6 +58,10 @@ The final part of the notebook turns these findings into five areas the company 
 - Why electronic check customers churn more: the data holds no failed-payment or billing-dispute records.
 - Geography: 1,129 cities with a median of 4 customers each is too sparse to use.
 
+## Supporting documents
+
+The findings are also written up for a business audience: [executive summary](docs/Executive_Summary.pdf) and [slide deck](docs/Churn_Executive_Deck.pdf).
+
 ## Data
 
 IBM Telco Customer Churn sample, Cognos Analytics 11.1.3+: https://community.ibm.com/community/user/blogs/steven-macko/2019/07/11/telco-customer-churn-1113
@@ -72,6 +76,8 @@ The file is a fictional telecom provider in California with 7,043 customers and 
 | `Telco_customer_churn.xlsx` | The original IBM dataset |
 | `requirements.txt` | Library versions the notebook was run with |
 | `images/` | Charts used in this README |
+| `docs/Executive_Summary.pdf` | Written summary for executives: the findings, the three decisions requested and the proposed tests |
+| `docs/Churn_Executive_Deck.pdf` | The same findings as a 15-slide deck |
 
 ## Run it
 
