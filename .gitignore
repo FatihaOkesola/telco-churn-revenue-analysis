@@ -1,0 +1,12 @@
+# Files the notebook generates when it runs
+telco_customers_clean.csv
+telco_customers_analysis.csv
+telco_model_outputs_set_aside.csv
+
+# Jupyter and Python
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# System files
+.DS_Store
